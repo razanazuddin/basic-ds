@@ -1,0 +1,59 @@
+:root {
+    /* main colors */
+    --color-primary: #4D84F4;
+    --color-primary-light: color-mod(var(--color-primary) tint(15%));
+    --color-primary-dark: color-mod(var(--color-primary) shade(15%));
+    --color-primary-bg: color-mod(var(--color-primary) alpha(20%));
+
+    --color-accent: #f5414f;
+    --color-accent-light: color-mod(var(--color-accent) tint(15%));
+    --color-accent-dark: color-mod(var(--color-accent) shade(10%));
+    --color-accent-bg: color-mod(var(--color-accent) alpha(20%));
+
+    // shades - generated using chroma.js - 12 steps
+    --black: #1d1d21;
+    --grey-10: #2e2e31;
+    --grey-6: #7b7a7d;
+    --grey-4: #a5a5a6;
+    --grey-3: #bbbbbc;
+    --grey-2: #d1d0d2;
+    --grey-1: #e8e7e8;
+    --white: white;
+
+    /* feedback */
+    --color-success: #88c459;
+    --color-error: #f5414f;
+    --color-warning: #ffd137;
+
+    /* typography */
+    --color-text: var(--grey-10);
+    --color-text-heading: var(--black);
+    --color-text-subtle: var(--grey-6);
+    --color-link: var(--color-primary);
+    --color-link-visited: var(--color-primary-dark);
+    --color-mark: var(--color-accent-bg);
+    --color-blockquote-border: var(--grey-2);
+
+    /* border */
+    --color-border: var(--grey-2);
+
+    /* body */
+    --color-body: var(--white);
+
+    /* forms */
+    --form-element-border: var(--color-border);
+    --form-element-border-focus: var(--color-primary);
+    --form-element-border-error: var(--color-error);
+    --form-element-bg: var(--white);
+    --form-text-placeholder: var(--grey-4);
+
+    /* buttons */
+    --button-primary-bg: var(--color-primary);
+    --button-primary-hover: var(--color-primary-light);
+    --button-primary-active: var(--color-primary-dark);
+    --button-primary-label: var(--white);
+
+    /* icons */
+    --color-icon-primary: var(--grey-4);
+    --color-icon-secondary: inherit;
+}
