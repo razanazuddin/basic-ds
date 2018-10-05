@@ -196,4 +196,134 @@ ul li, ol li {
   --color-icon-primary: var(--grey-4);
   --color-icon-secondary: inherit;
 }
+
+/* -------------------------------- 
+Buttons
+-------------------------------- */
+:root {
+  --btn-font-size: 1em;
+  --btn-sm: calc(var(--btn-font-size) - 0.2em);
+  --btn-md: calc(var(--btn-font-size) + 0.2em);
+  --btn-lg: calc(var(--btn-font-size) + 0.4em);
+  --btn-radius: var(--radius);
+}
+
+.btn {
+  display: inline-flex;
+  position: relative;
+  white-space: nowrap;
+  text-decoration: none;
+  line-height: 1;
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--btn-radius);
+  font-size: var(--btn-font-size);
+  color: var(--color-link);
+  transition: .2s;
+}
+
+.btn:active {
+  transition: none;
+}
+
+.btn .icon {
+  /* icon inherits color of button label */
+  color: inherit;
+  flex-shrink: 0;
+}
+
+/* themes */
+.btn--primary {
+  background-color: var(--btn-primary-bg);
+  color: var(--btn-primary-label);
+}
+
+.btn--primary:visited {
+  color: var(--btn-primary-label);
+}
+
+.btn--primary:hover {
+  background-color: var(--btn-primary-hover);
+}
+
+.btn--primary:active {
+  background-color: var(--btn-primary-active);
+}
+
+.btn--secondary {
+  background-color: var(--btn-secondary-bg);
+  color: var(--btn-secondary-label);
+}
+
+.btn--secondary:visited {
+  color: var(--btn-secondary-label);
+}
+
+.btn--secondary:active {
+  background-color: var(--btn-secondary-active);
+}
+
+.btn--accent {
+  background-color: var(--btn-accent-bg);
+  color: var(--btn-accent-label);
+}
+
+.btn--accent:visited {
+  color: var(--btn-accent-label);
+}
+
+.btn--accent:hover {
+  background-color: var(--btn-accent-hover);
+}
+
+.btn--accent:active {
+  background-color: var(--btn-accent-active);
+}
+
+/* feedback */
+.btn[disabled] {
+  cursor: not-allowed;
+  background-color: var(--btn-disabled-bg);
+  color: var(--btn-disabled-label);
+  box-shadow: none;
+  opacity: 0.6;
+}
+
+.btn[disabled]:visited {
+  color: var(--btn-disabled-label);
+}
+
+/* button size */
+.btn--sm {
+  font-size: var(--btn-sm);
+}
+
+.btn--md {
+  font-size: var(--btn-md);
+}
+
+.btn--lg {
+  font-size: var(--btn-lg);
+}
+
+.btn--full-width {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+/* buttons group */
+.btns {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: calc(-1 * var(--space-xs));
+}
+
+.btns > * {
+  margin-right: var(--space-xs);
+  margin-bottom: var(--space-xs);
+}
+
+.btns > *:last-of-type {
+  margin-right: 0;
+}
 /*# sourceMappingURL=basic-ds.css.map */
